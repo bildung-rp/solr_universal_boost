@@ -29,7 +29,7 @@ class IndexPageSubstituteKeywords implements \Tx_Solr_SubstitutePageIndexer{
 		);
 
 		foreach($boostKeywords as $boostKeyword) {
-			$originalPageDocument->addField('boostkeywords_stringM',$boostKeyword['keyword']);
+			$originalPageDocument->addField('boostkeywords_textM',$boostKeyword['keyword']);
 		}
 
 		return $originalPageDocument;

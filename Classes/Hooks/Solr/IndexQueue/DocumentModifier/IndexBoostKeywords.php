@@ -34,7 +34,7 @@ class IndexBoostKeywords implements \Tx_Solr_IndexQueuePageIndexerDocumentsModif
 
 		foreach($boostKeywords as $boostKeyword) {
 			foreach($documents as $k => $document){
-				$documents[$k]->addField('boostkeywords_stringM', $boostKeyword['keyword']);
+				$documents[$k]->addField('boostkeywords_textM', $boostKeyword['keyword']);
 			}
 		}
 

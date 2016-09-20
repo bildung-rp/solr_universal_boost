@@ -41,7 +41,7 @@ It adds a TCA column for every item_type which is available in `tx_solr_indexque
 
 Because it didn't want to extend every database table with a field I hook into *tcemain* to grab the additional column, store the values in a seperate table. (Of course the other way round for loading data)
 
-The keywords set produce a field inside the indexed solr documents called `boostkeywords_stringM`. This field is added to the list of *queryFields* configured in the solr extension with the boosting factor configured as mentioned above.
+The keywords set produce a field inside the indexed solr documents called `boostkeywords_textM`. This field is added to the list of *queryFields* configured in the solr extension with the boosting factor configured as mentioned above.
 
 I overwrite the default ScoreAnalyzer which comes with EXT:solr because this field wouldn't be evaluated and a backend-user couldn't figure out why a documents scores that high when using the ScoreAnalyzer.
 

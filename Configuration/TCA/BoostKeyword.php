@@ -112,7 +112,7 @@ $TCA['tx_solr_universal_boost_domain_model_boostkeyword'] = array(
 			),
 		),
 		'keyword' => array(
-			'exclude' => 0,
+			'exclude' => 1,
 			'label' => 'LLL:EXT:solr_universal_boost/Resources/Private/Language/locallang_db.xlf:tx_solr_universal_boost_domain_model_boostkeyword.keyword',
 			'config' => array(
 				'type' => 'input',
@@ -129,7 +129,7 @@ $TCA['tx_solr_universal_boost_domain_model_boostkeyword'] = array(
 
 $keywordFunc = array(
 	'boostKeywords' => array (
-		'exclude' => 0,
+		'exclude' => 1,
 		'label' => 'Boost Keyword',
 		'config' => array(
 			'type' => 'user',
